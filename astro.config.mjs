@@ -11,10 +11,4 @@ export default defineConfig({
   integrations: [tailwind(), mdx(), icon(), preact()],
   output: "server",
   adapter: vercel(),
-  vite: {
-    ssr: {
-      // Add npm packages containing invalid code here
-      noExternal: ["browser"],
-    },
-  },
 });
